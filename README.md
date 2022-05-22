@@ -21,6 +21,7 @@ python component.py ${MODEL_NAME}
 ```
 **NOTE:** The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1RI_t_g3ej95uc0XQ20_R3uikD5tmcYzJ?usp=sharing).
 
+
 ## Artwork adjustment
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 ```bash
