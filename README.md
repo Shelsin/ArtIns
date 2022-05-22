@@ -6,7 +6,7 @@
 > **Artistic Style Discovery with Independent Components** <br>
 > Xin Xie, Yi Li, Huaibo Huang, Haiyan Fu, Wanwan Wang, Yanqing Guo <br>
 > *Computer Vision and Pattern Recognition (CVPR), 2022 (**Poster**)*
-### [Paper](https://github.com/Shelsin/ArtIns) | [Poster](https://github.com/Shelsin/FIleStore/blob/main/ArtIns_CVPR2022/ArtIns_poster.pdf)
+### [Paper](https://github.com/Shelsin/ArtIns) | [Demo](https://youtu.be/7AeKzYWRotk) | [Poster](https://github.com/Shelsin/FIleStore/blob/main/ArtIns_CVPR2022/ArtIns_poster.pdf)
 
 In this repository, we propose an unsupervised approach, termed as **ArtIns**, to discover diverse styles from the latent space consisting of diverse style features. Specifically, we rethink the sense of the style features and find that the latent style representations may be composed of multiple independent style components. These style components can be captured from the latent style space by mathematical operations. Finally, new styles are synthesized by linearly combining style ingredients with different coefficients.
 
@@ -22,11 +22,10 @@ Collecting different style features to build the mixed matrix, which is divided 
 python component.py --model_name ${MODEL_NAME} --num_components ${NUM_COMPONENTS}
 ```
 
-
 ## Artwork adjustment
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 ```bash
-python main.py  
+python main.py --model_name ${MODEL_NAME} --num_semantics ${NUM_SEMANTICS}
 ```
 
 
