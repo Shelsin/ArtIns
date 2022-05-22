@@ -92,7 +92,7 @@ def main():
 
         if not os.path.exists(save_boundry_dir):
             os.makedirs(save_boundry_dir)
-        np.savez(os.path.join(save_boundry_dir, args.model_name), S=S, A=A)
+        np.savez(os.path.join(save_boundry_dir, args.model_name), S=S.T, A=A)
 
 if __name__ == '__main__':
     main()
