@@ -3,6 +3,7 @@
 ![image](./fig.png)
 **Figure:** *Diverse restylized artworks from different backbones including AdaIN, Linear, SANet and MST. In the first two rows, the first column is the source of the content image with the style image and the second column is the original artistic output, the other columns are the output images with artistic styles discovered by our algorithm. In the last row, given a natural scene, our method yields the other paintings.*
 
+
 > **Artistic Style Discovery with Independent Components** <br>
 > Xin Xie, Yi Li, Huaibo Huang, Haiyan Fu, Wanwan Wang, Yanqing Guo <br>
 > *Computer Vision and Pattern Recognition (CVPR), 2022 (**Poster**)*
