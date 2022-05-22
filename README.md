@@ -21,3 +21,14 @@ Collecting different style features to build the mixed matrix, which is divided 
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 
 
+
+## BibTeX
+
+```bibtex
+@inproceedings{shelsin2021artins,
+  title     = {Artistic Style Discovery with Independent Components},
+  author    = {Xin Xie and Yi Li and Huaibo Huang and Haiyan Fu and Wanwan Wang and Yanqing Guo},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+```
