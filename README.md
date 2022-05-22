@@ -15,9 +15,9 @@ In this repository, we propose an unsupervised approach, termed as **ArtIns**, t
 **Figure:** *Some components can be given explicit property definitions, such as exposure, brightness, defini- tion, contrast, saturation, color temperature, etc.*
 
 ## Artistic Ingredients Separation
-releasing
+Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem.
 
 ## Artwork adjustment
-releasing
+Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 
 
