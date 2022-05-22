@@ -17,7 +17,7 @@ In this repository, we propose an unsupervised approach, termed as **ArtIns**, t
 ## Artistic Ingredients Separation
 Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem.
 ```bash
-python DirectionFinding.py ${MODEL_NAME} 
+python component.py ${MODEL_NAME} 
 ```
 
 ## Artwork adjustment
