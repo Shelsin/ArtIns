@@ -6,7 +6,7 @@
 > **Artistic Style Discovery with Independent Components** <br>
 > Xin Xie, Yi Li, Huaibo Huang, Haiyan Fu, Wanwan Wang, Yanqing Guo <br>
 > *Computer Vision and Pattern Recognition (CVPR), 2022 (**Poster**)*
-### [Paper](https://github.com/Shelsin/ArtIns) | [Demo](https://youtu.be/7AeKzYWRotk) | [Poster](https://doc-0c-6g-apps-viewer.googleusercontent.com/viewer/secure/pdf/pf2oq8shc5hkjs3tma0b7e1s0gq8f581/0o3ehiqegcist1kaql4b787cjtl3e46p/1653220725000/drive/10310165295329163090/ACFrOgAdXn8fFJVNS3v1ZV6RexDDuBp4COfl_YeMPI7ZpKlcaVVsXBRgKAMuvm89Rkz3EEi4nPdhGDHRS9dyYR5nw6aZWUDP8hjxvqSPSaEou4A9YFn1zXLp1a2A3XgKHY7FPwapR0i86FXJPfbr?print=true&nonce=5tl1bfmrajj46&user=10310165295329163090&hash=9jpsln26rvkcege346hcj5m6lc4fasie)
+### [Paper](https://github.com/Shelsin/ArtIns) | [Demo](https://youtu.be/7AeKzYWRotk) | [Poster](https://github.com/Shelsin/FIleStore/blob/main/ArtIns_CVPR2022/ArtIns_poster.pdf)
 
 In this repository, we propose an unsupervised approach, termed as **ArtIns**, to discover diverse styles from the latent space consisting of diverse style features. Specifically, we rethink the sense of the style features and find that the latent style representations may be composed of multiple independent style components. These style components can be captured from the latent style space by mathematical operations. Finally, new styles are synthesized by linearly combining style ingredients with different coefficients.
 
