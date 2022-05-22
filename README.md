@@ -12,7 +12,12 @@
 In this repository, we propose an unsupervised approach, termed as **ArtIns**, to discover diverse styles from the latent space consisting of diverse style features. Specifically, we rethink the sense of the style features and find that the latent style representations may be composed of multiple independent style components. These style components can be captured from the latent style space by mathematical operations. Finally, new styles are synthesized by linearly combining style ingredients with different coefficients.
 
 ![image](./fig2.png)
-**Figure:** *These components can be given explicit property definitions, such as exposure, brightness, defini- tion, contrast, saturation, color temperature, etc.*
+**Figure:** *Some components can be given explicit property definitions, such as exposure, brightness, defini- tion, contrast, saturation, color temperature, etc.*
 
-
+## Artistic Ingredients Separation
 releasing
+
+## Artwork adjustment
+releasing
+
+
