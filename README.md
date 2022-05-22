@@ -33,7 +33,7 @@ python main.py --model_name ${MODEL_NAME} --num_semantics ${NUM_SEMANTICS}
 If you find our work useful in your research, please cite our paper using the following BibTeX entry ~ 
 
 ```bibtex
-@inproceedings{shelsin2021artins,
+@inproceedings{shelsin2022artins,
   title     = {Artistic Style Discovery with Independent Components},
   author    = {Xin Xie and Yi Li and Huaibo Huang and Haiyan Fu and Wanwan Wang and Yanqing Guo},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
