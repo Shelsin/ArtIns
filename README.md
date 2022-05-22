@@ -32,7 +32,7 @@ python main.py --model_name ${MODEL_NAME} --num_semantics ${NUM_SEMANTICS}
 ```
 
 
-## BibTeX
+## Citation
 If you find our work useful in your research, please cite our paper using the following BibTeX entry ~ 
 
 ```bibtex
