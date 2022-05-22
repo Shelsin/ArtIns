@@ -27,7 +27,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     # Basic options
     parser.add_argument('--style_dir', type=str, default='datasets/style', help='File path to the style image dataset')
-    parser.add_argument('--model_name', type=str, default='AdaIN', help='you can choose one from AdaIN/SANet')
+    parser.add_argument('--model_name', type=str, default='SANet', help='you can choose one from AdaIN/SANet')
     parser.add_argument('--save_component_dir', type=str, default='component_results', help='Directory to save the component directions.')
     parser.add_argument('--num_components', type=int, default=512, help='Number of independent components')
     return parser.parse_args()
@@ -51,9 +51,9 @@ def main():
         decoder.eval()
         transform.eval()
         vgg.eval()
-        decoder.load_state_dict(torch.load("model/SANET/decoder_iter_500000.pth"))
-        transform.load_state_dict(torch.load("model/SANET/transformer_iter_500000.pth"))
-        vgg.load_state_dict(torch.load("model/SANET/vgg_normalised.pth"))
+        decoder.load_state_dict(torch.load("model/SANet/decoder_iter_500000.pth"))
+        transform.load_state_dict(torch.load("model/SANet/transformer_iter_500000.pth"))
+        vgg.load_state_dict(torch.load("model/SANet/vgg_normalised.pth"))
         norm = nn.Sequential(*list(vgg.children())[:1]).to(device)
         enc_1 = nn.Sequential(*list(vgg.children())[:4]).to(device)  # input -> relu1_1
         enc_2 = nn.Sequential(*list(vgg.children())[4:11]).to(device)  # relu1_1 -> relu2_1

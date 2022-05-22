@@ -85,9 +85,9 @@ def main():
         decoder.eval()
         transform.eval()
         vgg.eval()
-        decoder.load_state_dict(torch.load("model/SANET/decoder_iter_500000.pth"))
-        transform.load_state_dict(torch.load("model/SANET/transformer_iter_500000.pth"))
-        vgg.load_state_dict(torch.load("model/SANET/vgg_normalised.pth"))
+        decoder.load_state_dict(torch.load("model/SANet/decoder_iter_500000.pth"))
+        transform.load_state_dict(torch.load("model/SANet/transformer_iter_500000.pth"))
+        vgg.load_state_dict(torch.load("model/SANet/vgg_normalised.pth"))
         enc_1 = nn.Sequential(*list(vgg.children())[:4]).to(device)  # input -> relu1_1
         enc_2 = nn.Sequential(*list(vgg.children())[4:11]).to(device)  # relu1_1 -> relu2_1
         enc_3 = nn.Sequential(*list(vgg.children())[11:18]).to(device)  # relu2_1 -> relu3_1
