@@ -19,7 +19,7 @@ Collecting different style features to build the mixed matrix, which is divided 
 ```bash
 python component.py ${MODEL_NAME} 
 ```
-**NOTE:** The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1RI_t_g3ej95uc0XQ20_R3uikD5tmcYzJ?usp=sharing).
+**NOTE:** The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1A81l0uQ4xFvfGNtdXFF8jXYCvNzca4uE).
 
 
 ## Artwork adjustment
