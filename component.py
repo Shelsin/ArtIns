@@ -66,9 +66,7 @@ def main():
     id = os.listdir(args.style_dir)
     with torch.no_grad():
         style_mix = np.ones([1,512])
-        # style_mix = np.array([])
         for m in id:
-            # getting image dir
             style_info = os.path.join(args.style_dir, str(m))
             if args.model_name == 'AdaIN':
                 s = Image.open(style_info)
@@ -78,7 +76,7 @@ def main():
             elif args.model_name == 'SANet':
                 style = style_tf(Image.open(style_info))
                 style = style.unsqueeze(0).to(device)
-                Style4_1 = enc_4(enc_3(enc_2(enc_1(style))))  # [1, 512, 64, 64]
+                Style4_1 = enc_4(enc_3(enc_2(enc_1(style))))  
                 sF = copy.deepcopy(Style4_1)
 
             style_mean,_ = calc_mean_std(sF)

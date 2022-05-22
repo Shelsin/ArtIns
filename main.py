@@ -36,8 +36,8 @@ def parse_args():
                         help='Start point for manipulation on each semantic.')
     parser.add_argument('--end_distance', type=float, default=100.0,
                         help='Ending point for manipulation on each semantic. ')
-    parser.add_argument('--step', type=int, default=41, help='Manipulation step on each semantic. ')   # 81
-    parser.add_argument('--num_semantics', type=int, default=2, help='Number of semantic boundaries')  # 5
+    parser.add_argument('--step', type=int, default=41, help='Manipulation step on each semantic. ')
+    parser.add_argument('--num_semantics', type=int, default=2, help='Number of semantic boundaries')
     parser.add_argument('--component_dir', type=str, default='component_results', help='Directory to save the component directions.')
 
     # HTML visualize saving or not
@@ -109,11 +109,11 @@ def main():
         elif args.model_name == 'SANet':
             Content4_1 = enc_4(enc_3(enc_2(enc_1(content))))
             Content5_1 = enc_5(Content4_1)
-            Style4_1 = enc_4(enc_3(enc_2(enc_1(style))))  # [1, 512, 64, 64]
+            Style4_1 = enc_4(enc_3(enc_2(enc_1(style))))
             sF = copy.deepcopy(Style4_1)
 
-        distances = np.linspace(args.start_distance, args.end_distance, args.step)  # change effect
-        num_sem = args.num_semantics  # num_sem = 1
+        distances = np.linspace(args.start_distance, args.end_distance, args.step)
+        num_sem = args.num_semantics
 
         if args.viz_flag:
             vizer = HtmlPageVisualizer(num_rows=num_sem,
@@ -131,7 +131,7 @@ def main():
 
 
         for sem_id in tqdm(range(num_sem), desc='Semantic ', leave=False):
-            boundary = boundaries[sem_id:sem_id + 1]  # 第一层的特征  (1, 512)
+            boundary = boundaries[sem_id:sem_id + 1]
             for col_id, d in enumerate(distances, start=1):
                 sf_test = copy.deepcopy(sF)
                 x = torch.ones(sf_test.shape).to(device)
@@ -145,7 +145,7 @@ def main():
                     content = model.generate(code)
                     content = AdaIN_utils.denorm(content, device)
                 elif args.model_name == 'SANet':
-                    Style5_1 = enc_5(sf_test)  # [1, 512, 32, 32]
+                    Style5_1 = enc_5(sf_test)
                     code = transform(Content4_1, sf_test, Content5_1, Style5_1)
                     content = decoder(code)
 
