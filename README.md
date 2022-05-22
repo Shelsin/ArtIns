@@ -3,7 +3,6 @@
 ![image](./fig.png)
 **Figure:** *Diverse restylized artworks from different backbones including AdaIN, Linear, SANet and MST. In the first two rows, the first column is the source of the content image with the style image and the second column is the original artistic output, the other columns are the output images with artistic styles discovered by our algorithm. In the last row, given a natural scene, our method yields the other paintings.*
 
-
 > **Artistic Style Discovery with Independent Components** <br>
 > Xin Xie, Yi Li, Huaibo Huang, Haiyan Fu, Wanwan Wang, Yanqing Guo <br>
 > *Computer Vision and Pattern Recognition (CVPR), 2022 (**Poster**)*
@@ -15,17 +14,19 @@ In this repository, we propose an unsupervised approach, termed as **ArtIns**, t
 **Figure:** *Some components can be given explicit property definitions, such as exposure, brightness, definition, contrast, saturation, color temperature, etc.*
 
 ## Artistic Ingredients Separation
-Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem.
+Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem. 
+
+**NOTE:** The number of the style examples is more than that of the components, which is necessary for more full artistic ingredients separation. The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1A81l0uQ4xFvfGNtdXFF8jXYCvNzca4uE).
+
 ```bash
-python component.py ${MODEL_NAME} 
+python component.py --model_name ${MODEL_NAME} --num_components ${NUM_COMPONENTS}
 ```
-**NOTE:** The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1A81l0uQ4xFvfGNtdXFF8jXYCvNzca4uE).
 
 
 ## Artwork adjustment
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 ```bash
-python main.py ${MODEL_NAME} 
+python main.py  
 ```
 
 
