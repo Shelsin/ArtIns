@@ -27,7 +27,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     # Basic options
     parser.add_argument('--style_dir', type=str, default='datasets/style', help='File path to the style image dataset')
-    parser.add_argument('--model_name', type=str, default='SANet', help='you can choose one from AdaIN/SANet')
+    parser.add_argument('--model_name', type=str, default='AdaIN', help='you can choose one from AdaIN/SANet')
     parser.add_argument('--save_component_dir', type=str, default='component_results', help='Directory to save the component directions.')
     parser.add_argument('--num_components', type=int, default=512, help='Number of independent components')
     return parser.parse_args()
