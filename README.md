@@ -25,7 +25,7 @@ Collecting different style features to build the mixed matrix, which is divided 
 python component.py --model_name ${MODEL_NAME} --num_components ${NUM_COMPONENTS}
 ```
 
-## Artwork adjustment
+## Artwork Adjustment
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
 ```bash
 python main.py --model_name ${MODEL_NAME} --num_semantics ${NUM_SEMANTICS}
