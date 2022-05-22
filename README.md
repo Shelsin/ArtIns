@@ -16,7 +16,7 @@ In this repository, we propose an unsupervised approach, termed as **ArtIns**, t
 ## Artistic Ingredients Separation
 Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem. 
 
-**NOTE:** The number of the style examples is more than that of the components, which is necessary for more full artistic ingredients separation. The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1A81l0uQ4xFvfGNtdXFF8jXYCvNzca4uE).
+**NOTE:** The number of the style examples is more than that of the components, which is necessary to ensure that artistic ingredients are independent. The pre-trained models (AdaIN and SANet) can be download [here](https://drive.google.com/drive/folders/1A81l0uQ4xFvfGNtdXFF8jXYCvNzca4uE).
 
 ```bash
 python component.py --model_name ${MODEL_NAME} --num_components ${NUM_COMPONENTS}
