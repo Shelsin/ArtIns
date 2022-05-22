@@ -16,6 +16,9 @@ In this repository, we propose an unsupervised approach, termed as **ArtIns**, t
 
 ## Artistic Ingredients Separation
 Collecting different style features to build the mixed matrix, which is divided into multiple independent artistic components by FastICA algorithm like the cocktail party problem.
+```bash
+python sefa.py ${MODEL_NAME} 
+```
 
 ## Artwork adjustment
 Different components control different style effect, and artwork can be adjusted by changing the style code according to the style components.
@@ -23,6 +26,7 @@ Different components control different style effect, and artwork can be adjusted
 
 
 ## BibTeX
+If you find our work useful in your research, please cite our paper using the following BibTeX entry ~ 
 
 ```bibtex
 @inproceedings{shelsin2021artins,
